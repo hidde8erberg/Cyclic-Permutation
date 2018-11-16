@@ -1,15 +1,5 @@
 def permutation(x,y):
     final = []
-    loc = 0
-    char = ''
-    
-    first = x[loc]
-    final.append(first)
-    
-    while char != first:
-        char = y[loc]
-        if char != first: final.append(char)
-        loc = x.index(char) 
 
     while not set(x) == set(final):
         cp = set(final)
